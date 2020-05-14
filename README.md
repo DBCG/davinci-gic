@@ -26,6 +26,12 @@ Resources for use at HL7/CMS FHIR Connectathon, Da Vinci Gaps in Care Track.
         
         https://github.com/DBCG/cqf-ruler/tree/davinci_gic
         clone: https://github.com/DBCG/cqf-ruler.git, switch to davinci_gic branch
+        
+    
+* Postman scripts
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/993bb7029e7d7158948f)
+
 
 ---
 ## Technical Info
