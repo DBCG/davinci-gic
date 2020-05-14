@@ -27,4 +27,9 @@ Resources for use at HL7/CMS FHIR Connectathon, Da Vinci Gaps in Care Track.
         https://github.com/DBCG/cqf-ruler/tree/davinci_gic
         clone: https://github.com/DBCG/cqf-ruler.git, switch to davinci_gic branch
 
+---
+## Technical Info
+* Sandbox build: 
 
+
+        http://jenkins.alphora.com:8080/job/Sandbox%20Deployments%20(fhir.alphora.com,%20cqm-sandbox,%20etc.)/job/gic-sandbox.alphora.com%20deploy/
