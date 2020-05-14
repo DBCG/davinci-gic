@@ -9,7 +9,7 @@ SET fsoption=
 GOTO igpublish
 
 :isonline
-ECHO We're online, setting publish to the Connectathon sandbox FHIR server
+ECHO We're online, setting publish to the GIC sandbox FHIR server
 SET fsoption=-fs https://gic-sandbox.alphora.com/cqf-ruler-r4/fhir/
 
 :igpublish
