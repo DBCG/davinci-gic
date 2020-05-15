@@ -709,6 +709,15 @@
           "start": "2018-12-31T17:00:00-07:00",
           "end": "2019-12-30T17:00:00-07:00"
         },
+        "improvementNotation": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+              "code": "increase",
+              "display": "Measure Improvement Notation"
+            }
+          ]
+        },
         "group": [
           {
             "id": "group-1",
@@ -1352,6 +1361,15 @@
         "period": {
           "start": "2018-12-31T17:00:00-07:00",
           "end": "2019-12-30T17:00:00-07:00"
+        },
+        "improvementNotation": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+              "code": "increase",
+              "display": "Measure Improvement Notation"
+            }
+          ]
         },
         "group": [
           {
