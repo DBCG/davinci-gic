@@ -95,11 +95,11 @@ Individual bundles:
 
     https://travis-ci.com/github/DBCG/cqf-ruler/builds - davinci_gic
 
-2.  Jenkins build, triggered manually
+2.  Jenkins build, triggered manually:
 
         http://jenkins.alphora.com:8080/job/Sandbox%20Deployments%20(fhir.alphora.com,%20cqm-sandbox,%20etc.)/job/gic-sandbox.alphora.com%20deploy/
 
-3.  CQF Tooling - RefreshIG, triggered manually from the IG, to load the content.
+3.  CQF Tooling - RefreshIG, triggered manually from the IG, to load the content:
 
 https://github.com/DBCG/davinci-gic/tree/master/fhir4
 
