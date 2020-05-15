@@ -81,8 +81,8 @@
       "coding": [
         {
           "system": "http://loinc.org",
-          "code": "57024-2",
-          "display": "Health Quality Measure Document"
+          "code": "11111-1",
+          "display": "Preventive Care"
         }
       ]
     }
