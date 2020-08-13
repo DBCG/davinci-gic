@@ -1,12 +1,6 @@
 {
   "resourceType": "Library",
   "id": "FHIR-ModelInfo",
-  "extension": [ {
-    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
-    "valueReference": {
-      "reference": "#cqf-tooling"
-    }
-  } ],
   "url": "http://hl7.org/fhir/Library/FHIR-ModelInfo",
   "identifier": [ {
     "use": "official",
@@ -23,7 +17,7 @@
       "code": "model-definition"
     } ]
   },
-  "date": "2019-08-08",
+  "date": "2020-08-08",
   "publisher": "Health Level 7 International - Clinical Quality Information Work Group",
   "contact": [ {
     "telecom": [ {
@@ -38,7 +32,7 @@
       "code": "001"
     } ]
   } ],
-  "approvalDate": "2019-08-08",
+  "approvalDate": "2020-08-08",
   "lastReviewDate": "2020-06-19",
   "topic": [ {
     "text": "FHIR"

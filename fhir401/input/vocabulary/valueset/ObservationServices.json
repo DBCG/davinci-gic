@@ -9,7 +9,7 @@
     "include": [
       {
         "system": "http://snomed.info/sct",
-        "version": "2019-09",
+        "version": "2020-09",
         "concept": [
           {
             "code": "448851000124103",

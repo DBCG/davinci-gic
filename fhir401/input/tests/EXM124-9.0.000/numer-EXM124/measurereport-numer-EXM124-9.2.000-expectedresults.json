@@ -103,7 +103,7 @@
             "subject": {
               "reference": "Patient/numer-EXM124"
             },
-            "effectiveDateTime": "2019-11-01T00:00:00",
+            "effectiveDateTime": "2020-11-01T00:00:00",
             "valueBoolean": true
           }
         },
@@ -180,8 +180,8 @@
               "reference": "Patient/numer-EXM124"
             },
             "period": {
-              "start": "2019-01-01T00:00:00.0",
-              "end": "2019-01-02T00:00:00.0"
+              "start": "2020-01-01T00:00:00.0",
+              "end": "2020-01-02T00:00:00.0"
             }
           }
         },
@@ -216,7 +216,7 @@
   },
   "period": {
     "start": "2018-12-31T17:00:00-07:00",
-    "end": "2019-12-30T17:00:00-07:00"
+    "end": "2020-12-30T17:00:00-07:00"
   },
   "group": [
     {

@@ -12,11 +12,6 @@
   "extension": [ {
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
     "valueCode": "boolean"
-  }, {
-    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
-    "valueReference": {
-      "reference": "#cqf-tooling"
-    }
   } ],
   "url": "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-EXM125",
   "identifier": [ {
@@ -61,8 +56,8 @@
   "approvalDate": "2016-01-01",
   "lastReviewDate": "2016-09-01",
   "effectivePeriod": {
-    "start": "2019-01-01",
-    "end": "2019-12-31"
+    "start": "2020-01-01",
+    "end": "2020-12-31"
   },
   "topic": [ {
     "coding": [ {
