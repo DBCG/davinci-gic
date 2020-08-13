@@ -15,4 +15,4 @@
 
 3.  run _refresh
 
-4. results are posted to the configured FHIR serer and in the bundles folder
+4. results are posted to the configured FHIR serer and to the bundles folder
