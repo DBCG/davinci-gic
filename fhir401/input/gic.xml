@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-    <id value="fhir.dbcg.connectathon-r4"/>
-    <url value="http://fhir.org/guides/dbcg/connectathon/ImplementationGuide/fhir.dbcg.connectathon-r4"/>
+    <id value="fhir.davinci.gic"/>
+    <url value="http://fhir.org/guides/dbcg/connectathon/ImplementationGuide/fhir.davinci.gic"/>
     <version value="4.0.0"/>
     <name value="Connectathon_DBCG"/>
-    <title value="DBCG Connectathon Implementation Guide"/>
+    <title value="DBCG Da Vinci Gaps In Care Implementation Guide"/>
     <status value="draft"/>
     <experimental value="false"/>
     <date value="2020-04-24"/>
@@ -15,8 +15,8 @@
         <value value="http://www.dynamiccontentgroup.com"/>
       </telecom>
     </contact>
-    <description value="Connectathon Implementation Guide"/>
-    <packageId value="fhir.dbcg.connectathon-r4"/>
+    <description value="Da Vinci Gaps in Care Implementation Guide"/>
+    <packageId value="fhir.davinci.gic"/>
 	  <fhirVersion value="4.0.1"/>
     <definition>
         <page>
@@ -33,37 +33,6 @@
             <title value="Measures" />
             <generation value="html" />
           </page>
-          <page>
-            <nameUrl value="EXM104-9.1.000.html" />
-            <title value="Measure - EXM104" />
-            <generation value="html" />
-            <page>
-              <nameUrl value="exm104-cql.html" />
-              <title value="EXM104 - CQL Source" />
-              <generation value="html" />
-            </page>
-          </page>
-          <page>
-            <nameUrl value="EXM105-9.1.000.html" />
-            <title value="Measure - EXM105" />
-            <generation value="html" />
-            <page>
-              <nameUrl value="exm105-cql.html" />
-              <title value="EXM105 - CQL Source" />
-              <generation value="html" />
-            </page>
-          </page>
-          <page>
-            <nameUrl value="EXM108-9.2.000.html" />
-            <title value="Measure - EXM108" />
-            <generation value="html" />
-            <page>
-              <nameUrl value="exm108-cql.html" />
-              <title value="EXM108 - CQL Source" />
-              <generation value="html" />
-            </page>
-          </page>
-        </page>
 
         <!-- copyright year is a mandatory parameter -->
         <parameter>
