@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-    <id value="fhir.davinci.gic"/>
-    <url value="http://fhir.org/guides/dbcg/connectathon/ImplementationGuide/fhir.davinci.gic"/>
+    <id value="fhir.dbcg.connectathon-r4"/>
+    <url value="http://fhir.org/guides/dbcg/connectathon/ImplementationGuide/fhir.dbcg.connectathon-r4"/>
     <version value="4.0.0"/>
     <name value="Connectathon_DBCG"/>
-    <title value="DBCG Da Vinci Gaps In Care Implementation Guide"/>
+    <title value="DBCG Connectathon Implementation Guide"/>
     <status value="draft"/>
     <experimental value="false"/>
     <date value="2020-04-24"/>
@@ -15,8 +15,8 @@
         <value value="http://www.dynamiccontentgroup.com"/>
       </telecom>
     </contact>
-    <description value="Da Vinci Gaps in Care Implementation Guide"/>
-    <packageId value="fhir.davinci.gic"/>
+    <description value="Connectathon Implementation Guide"/>
+    <packageId value="fhir.dbcg.connectathon-r4"/>
 	  <fhirVersion value="4.0.1"/>
     <definition>
         <page>
@@ -33,6 +33,7 @@
             <title value="Measures" />
             <generation value="html" />
           </page>
+        </page>
 
         <!-- copyright year is a mandatory parameter -->
         <parameter>
