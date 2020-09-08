@@ -1,0 +1,437 @@
+{
+	"info": {
+		"_postman_id": "245ea684-a71c-4000-a89c-2eccbc16a0b3",
+		"name": "GIC_Connectathon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Topic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cqf-ruler-r4/fhir/Measure/$care-gaps?periodStart=2020-01-01&periodEnd=2020-12-31&subject=Patient/numer-EXM130&measure= EXM124&topic=57024-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cqf-ruler-r4",
+						"fhir",
+						"Measure",
+						"$care-gaps"
+					],
+					"query": [
+						{
+							"key": "periodStart",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "periodEnd",
+							"value": "2020-12-31"
+						},
+						{
+							"key": "subject",
+							"value": "Patient/numer-EXM130"
+						},
+						{
+							"key": "measure",
+							"value": " EXM124"
+						},
+						{
+							"key": "topic",
+							"value": "57024-2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "noTopic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cqf-ruler-r4/fhir/Measure/$care-gaps?periodStart=2020-01-01&periodEnd=2020-12-31&subject=Patient/numer-EXM130&measure= EXM124",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cqf-ruler-r4",
+						"fhir",
+						"Measure",
+						"$care-gaps"
+					],
+					"query": [
+						{
+							"key": "periodStart",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "periodEnd",
+							"value": "2020-12-31"
+						},
+						{
+							"key": "subject",
+							"value": "Patient/numer-EXM130"
+						},
+						{
+							"key": "measure",
+							"value": " EXM124"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateGoup_gaps-subject-group01",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"resourceType\": \"Group\",\r\n    \"id\": \"gaps-subject-group01\",\r\n    \"meta\": {\r\n        \"versionId\": \"1\",\r\n        \"lastUpdated\": \"2020-08-14T08:06:02.134-06:00\",\r\n        \"source\": \"#BgFXdacwQf2Askp1\",\r\n        \"profile\": [\r\n            \"http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/gaps-group-deqm\"\r\n        ]\r\n    },\r\n    \"text\": {\r\n        \"status\": \"generated\",\r\n        \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><p><b>id</b>: gaps-subject-group01</p><p><b>meta</b>: </p><p><b>type</b>: person</p><p><b>actual</b>: true</p><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\\\"Patient-patient01.html\\\">Generated Summary: id: patient01; Medical record number = 12345 (USUAL); active; Jairo Webster (OFFICIAL); gender: male; birthDate: 1946-12-16; <span title=\\\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\\\">Married</span></a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\\\"Patient-patient02.html\\\">Generated Summary: id: patient02; Medical record number = 23456 (USUAL); active; Darien Bernard (OFFICIAL); gender: male; birthDate: 1967-06-13; <span title=\\\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\\\">Married</span></a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\\\"Patient-patient03.html\\\">Generated Summary: id: patient03; Medical record number = 34567 (USUAL); active; Virginia Hartman (OFFICIAL); gender: female; birthDate: 1983-09-12; <span title=\\\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus U}\\\">unmarried</span></a></p></blockquote></div>\"\r\n    },\r\n    \"type\": \"person\",\r\n    \"actual\": true,\r\n    \"member\": [\r\n        {\r\n            \"entity\": {\r\n                \"reference\": \"Patient/numer-EXM130\"\r\n            }\r\n        },\r\n        {\r\n            \"entity\": {\r\n                \"reference\": \"Patient/numer-EXM125\"\r\n            }\r\n        },\r\n        {\r\n            \"entity\": {\r\n                \"reference\": \"Patient/numer-EXM124\"\r\n            }\r\n        }    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cqf-ruler-r4/fhir/Group/gaps-subject-group01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cqf-ruler-r4",
+						"fhir",
+						"Group",
+						"gaps-subject-group01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subjectGroup",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cqf-ruler-r4/fhir/Measure/$care-gaps?periodStart=2020-01-01&periodEnd=2020-12-31&subject=Group/gaps-subject-group01&measure= EXM124&topic=57024-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cqf-ruler-r4",
+						"fhir",
+						"Measure",
+						"$care-gaps"
+					],
+					"query": [
+						{
+							"key": "periodStart",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "periodEnd",
+							"value": "2020-12-31"
+						},
+						{
+							"key": "subject",
+							"value": "Group/gaps-subject-group01"
+						},
+						{
+							"key": "measure",
+							"value": " EXM124"
+						},
+						{
+							"key": "topic",
+							"value": "57024-2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subjectPatient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cqf-ruler-r4/fhir/Measure/$care-gaps?periodStart=2020-01-01&periodEnd=2020-12-31&subject=Patient/numer-EXM130&measure= EXM124&topic=57024-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cqf-ruler-r4",
+						"fhir",
+						"Measure",
+						"$care-gaps"
+					],
+					"query": [
+						{
+							"key": "periodStart",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "periodEnd",
+							"value": "2020-12-31"
+						},
+						{
+							"key": "subject",
+							"value": "Patient/numer-EXM130"
+						},
+						{
+							"key": "measure",
+							"value": " EXM124"
+						},
+						{
+							"key": "topic",
+							"value": "57024-2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "statusClosedGap",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cqf-ruler-r4/fhir/Measure/$care-gaps?periodStart=2020-01-01&periodEnd=2020-12-31&subject=Group/gaps-subject-group01&measure= EXM124&topic=57024-2&status=closed-gap",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cqf-ruler-r4",
+						"fhir",
+						"Measure",
+						"$care-gaps"
+					],
+					"query": [
+						{
+							"key": "periodStart",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "periodEnd",
+							"value": "2020-12-31"
+						},
+						{
+							"key": "subject",
+							"value": "Group/gaps-subject-group01"
+						},
+						{
+							"key": "measure",
+							"value": " EXM124"
+						},
+						{
+							"key": "topic",
+							"value": "57024-2"
+						},
+						{
+							"key": "status",
+							"value": "closed-gap"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "statusOpenGap",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cqf-ruler-r4/fhir/Measure/$care-gaps?periodStart=2020-01-01&periodEnd=2020-12-31&subject=Group/gaps-subject-group01&measure= EXM124&topic=57024-2&status=open-gap",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cqf-ruler-r4",
+						"fhir",
+						"Measure",
+						"$care-gaps"
+					],
+					"query": [
+						{
+							"key": "periodStart",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "periodEnd",
+							"value": "2020-12-31"
+						},
+						{
+							"key": "subject",
+							"value": "Group/gaps-subject-group01"
+						},
+						{
+							"key": "measure",
+							"value": " EXM124"
+						},
+						{
+							"key": "topic",
+							"value": "57024-2"
+						},
+						{
+							"key": "status",
+							"value": "open-gap"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "statusNotProvided",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cqf-ruler-r4/fhir/Measure/$care-gaps?periodStart=2020-01-01&periodEnd=2020-12-31&subject=Group/gaps-subject-group01&measure= EXM124&topic=57024-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cqf-ruler-r4",
+						"fhir",
+						"Measure",
+						"$care-gaps"
+					],
+					"query": [
+						{
+							"key": "periodStart",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "periodEnd",
+							"value": "2020-12-31"
+						},
+						{
+							"key": "subject",
+							"value": "Group/gaps-subject-group01"
+						},
+						{
+							"key": "measure",
+							"value": " EXM124"
+						},
+						{
+							"key": "topic",
+							"value": "57024-2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "measure",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cqf-ruler-r4/fhir/Measure/$care-gaps?periodStart=2020-01-01&periodEnd=2020-12-31&subject=Group/gaps-subject-group01&measure= EXM124&topic=57024-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cqf-ruler-r4",
+						"fhir",
+						"Measure",
+						"$care-gaps"
+					],
+					"query": [
+						{
+							"key": "periodStart",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "periodEnd",
+							"value": "2020-12-31"
+						},
+						{
+							"key": "subject",
+							"value": "Group/gaps-subject-group01"
+						},
+						{
+							"key": "measure",
+							"value": " EXM124"
+						},
+						{
+							"key": "topic",
+							"value": "57024-2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "noMeasure",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cqf-ruler-r4/fhir/Measure/$care-gaps?periodStart=2020-01-01&periodEnd=2020-12-31&subject=Group/gaps-subject-group01&topic=57024-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cqf-ruler-r4",
+						"fhir",
+						"Measure",
+						"$care-gaps"
+					],
+					"query": [
+						{
+							"key": "periodStart",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "periodEnd",
+							"value": "2020-12-31"
+						},
+						{
+							"key": "subject",
+							"value": "Group/gaps-subject-group01"
+						},
+						{
+							"key": "topic",
+							"value": "57024-2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
