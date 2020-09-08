@@ -1,0 +1,192 @@
+{
+  "resourceType": "Parameters",
+  "id": "closed-gap-Group_gaps-subject-group01-report",
+  "parameter": [
+    {
+      "name": "Gaps in Care Report - Patient/numer-EXM124",
+      "resource": {
+        "resourceType": "Bundle",
+        "type": "document",
+        "timestamp": "2020-09-08T12:10:03.306-06:00",
+        "entry": [
+          {
+            "resource": {
+              "resourceType": "Composition",
+              "status": "final",
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/us/davinci-deqm/CodeSystem/gaps-doc-type",
+                    "code": "gaps-doc",
+                    "display": "Gaps in Care Report"
+                  }
+                ]
+              },
+              "subject": {
+                "reference": "Patient/numer-EXM124"
+              },
+              "date": "2020-09-08T12:10:03-06:00",
+              "title": "Care Gap Report for Patient/numer-EXM124",
+              "section": [
+                {
+                  "title": "Cervical Cancer Screening",
+                  "focus": {
+                    "reference": "MeasureReport/caf13a05-14b0-404f-aa7d-cb74740dc34c"
+                  },
+                  "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>No detected issues.</p></div>"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "MeasureReport",
+              "id": "caf13a05-14b0-404f-aa7d-cb74740dc34c",
+              "meta": {
+                "profile": [
+                  "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm"
+                ]
+              },
+              "status": "complete",
+              "type": "individual",
+              "measure": "Measure/measure-EXM124-9.0.000",
+              "subject": {
+                "reference": "Patient/numer-EXM124"
+              },
+              "date": "2020-09-08T12:10:08-06:00",
+              "reporter": {
+                "reference": "Organization/1553"
+              },
+              "period": {
+                "start": "2020-01-01T00:00:00-07:00",
+                "end": "2020-12-31T00:00:00-07:00"
+              },
+              "improvementNotation": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+                    "code": "increase"
+                  }
+                ]
+              },
+              "group": [
+                {
+                  "id": "group-1",
+                  "population": [
+                    {
+                      "code": {
+                        "coding": [
+                          {
+                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                            "code": "initial-population",
+                            "display": "Initial Population"
+                          }
+                        ]
+                      },
+                      "count": 1
+                    },
+                    {
+                      "code": {
+                        "coding": [
+                          {
+                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                            "code": "numerator",
+                            "display": "Numerator"
+                          }
+                        ]
+                      },
+                      "count": 1
+                    },
+                    {
+                      "code": {
+                        "coding": [
+                          {
+                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                            "code": "denominator",
+                            "display": "Denominator"
+                          }
+                        ]
+                      },
+                      "count": 1
+                    },
+                    {
+                      "code": {
+                        "coding": [
+                          {
+                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                            "code": "denominator-exclusion",
+                            "display": "Denominator Exclusion"
+                          }
+                        ]
+                      },
+                      "count": 0
+                    }
+                  ],
+                  "measureScore": {
+                    "value": 1.0
+                  }
+                }
+              ],
+              "evaluatedResource": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://teminology.hl7.org/CodeSystem/measure-population",
+                            "code": "initial-population",
+                            "display": "initial-population"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "reference": "Observation/numer-EXM124-3"
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://teminology.hl7.org/CodeSystem/measure-population",
+                            "code": "initial-population",
+                            "display": "initial-population"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "reference": "Patient/numer-EXM124"
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://teminology.hl7.org/CodeSystem/measure-population",
+                            "code": "initial-population",
+                            "display": "initial-population"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "reference": "Encounter/numer-EXM124-2"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

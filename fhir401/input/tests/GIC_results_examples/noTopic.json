@@ -1,0 +1,200 @@
+{
+  "resourceType": "Parameters",
+  "parameter": [
+    {
+      "name": "Gaps in Care Report - Patient/numer-EXM130",
+      "resource": {
+        "resourceType": "Bundle",
+        "type": "document",
+        "timestamp": "2020-09-08T11:54:07.569-06:00",
+        "entry": [
+          {
+            "resource": {
+              "resourceType": "Composition",
+              "status": "final",
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/us/davinci-deqm/CodeSystem/gaps-doc-type",
+                    "code": "gaps-doc",
+                    "display": "Gaps in Care Report"
+                  }
+                ]
+              },
+              "subject": {
+                "reference": "Patient/numer-EXM130"
+              },
+              "date": "2020-09-08T11:54:07-06:00",
+              "title": "Care Gap Report for Patient/numer-EXM130",
+              "section": [
+                {
+                  "title": "Cervical Cancer Screening",
+                  "focus": {
+                    "reference": "MeasureReport/ec37b0ad-a828-4d05-886c-80544e511937"
+                  },
+                  "entry": [
+                    {
+                      "reference": "DetectedIssue/259c785b-e3a2-4632-9745-6251cec56dc2"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "MeasureReport",
+              "id": "ec37b0ad-a828-4d05-886c-80544e511937",
+              "meta": {
+                "profile": [
+                  "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/indv-measurereport-deqm"
+                ]
+              },
+              "status": "complete",
+              "type": "individual",
+              "measure": "Measure/measure-EXM124-9.0.000",
+              "subject": {
+                "reference": "Patient/numer-EXM130"
+              },
+              "date": "2020-09-08T11:54:12-06:00",
+              "reporter": {
+                "reference": "Organization/1553"
+              },
+              "period": {
+                "start": "2020-01-01T00:00:00-07:00",
+                "end": "2020-12-31T00:00:00-07:00"
+              },
+              "improvementNotation": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+                    "code": "increase"
+                  }
+                ]
+              },
+              "group": [
+                {
+                  "id": "group-1",
+                  "population": [
+                    {
+                      "code": {
+                        "coding": [
+                          {
+                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                            "code": "initial-population",
+                            "display": "Initial Population"
+                          }
+                        ]
+                      },
+                      "count": 0
+                    },
+                    {
+                      "code": {
+                        "coding": [
+                          {
+                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                            "code": "numerator",
+                            "display": "Numerator"
+                          }
+                        ]
+                      },
+                      "count": 0
+                    },
+                    {
+                      "code": {
+                        "coding": [
+                          {
+                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                            "code": "denominator",
+                            "display": "Denominator"
+                          }
+                        ]
+                      },
+                      "count": 0
+                    },
+                    {
+                      "code": {
+                        "coding": [
+                          {
+                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                            "code": "denominator-exclusion",
+                            "display": "Denominator Exclusion"
+                          }
+                        ]
+                      },
+                      "count": 0
+                    }
+                  ]
+                }
+              ],
+              "evaluatedResource": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://teminology.hl7.org/CodeSystem/measure-population",
+                            "code": "initial-population",
+                            "display": "initial-population"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "reference": "Patient/numer-EXM130"
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://teminology.hl7.org/CodeSystem/measure-population",
+                            "code": "initial-population",
+                            "display": "initial-population"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "reference": "Encounter/numer-EXM130-4"
+                }
+              ]
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "DetectedIssue",
+              "id": "259c785b-e3a2-4632-9745-6251cec56dc2",
+              "status": "final",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/us/davinci-deqm/CodeSystem/detectedissue-category",
+                    "code": "care-gap",
+                    "display": "Gap in Care Detected"
+                  }
+                ]
+              },
+              "patient": {
+                "reference": "Patient/numer-EXM130"
+              },
+              "evidence": [
+                {
+                  "detail": [
+                    {
+                      "reference": "MeasureReport/ec37b0ad-a828-4d05-886c-80544e511937"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
