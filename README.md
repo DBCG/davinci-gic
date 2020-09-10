@@ -2,8 +2,6 @@
 
 Resources for use at HL7/CMS FHIR Connectathon, Da Vinci Gaps in Care Track.
 
-* [Track Description](https://confluence.hl7.org/display/FHIR/2020-05+Da+Vinci+Gaps+in+Care)
-* [Zulip Stream](https://chat.fhir.org/#narrow/stream/179207-connectathon-mgmt/topic/Da.20Vinci.20Gaps.20In.20Care.20Track)
 
 * GIC IG:
     
@@ -30,62 +28,49 @@ Resources for use at HL7/CMS FHIR Connectathon, Da Vinci Gaps in Care Track.
     
 * Postman scripts
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/993bb7029e7d7158948f)
+fhir401\docs\postman-collection\Connectathon 25 Da Vinci GIC.postman_collection.json
 
-```
-Note: the Postman scripts do not include bundles to post.  To post bundles, run the _refresh script in the IG.  By default the script will post to the GIC sandbox, but you can edit it to post to any FHIR server.
-```
 
 
 ## Gaps In Care Scenarios
 
 ### Cervical Cancer Screening - EXM124
 
-#### FHIR4
-
-* [Measure CQL](fhir4/input/pagecontent/cql/EXM124_FHIR4-8.2.000.cql)
-* [Master Bundle](fhir4/bundles/EXM124_FHIR4-8.2.000/EXM124_FHIR4-8.2.000-bundle.json)  (includes all the Individual bundles)
-
-Individual bundles:
-* [Measure Bundle](fhir4/bundles/EXM124_FHIR4-8.2.000/EXM124_FHIR4-8.2.000-files/measure-EXM124_FHIR4-8.2.000.json)
-* [Terminology Bundle](fhir4/bundles/EXM124_FHIR4-8.2.000/EXM124_FHIR4-8.2.000-files/valuesets-EXM124_FHIR4-8.2.000-bundle.json)
-* [Denominator Test Bundle](fhir4/bundles/EXM124_FHIR4-8.2.000/EXM124_FHIR4-8.2.000-files/tests-denom-EXM124_FHIR4-bundle.json)
-    * Denominator Patient ID: denom-EXM124-FHI4
-* [Numerator Test Bundle](fhir4/bundles/EXM124_FHIR4-8.2.000/EXM124_FHIR4-8.2.000-files/tests-numer-EXM124_FHIR4-bundle.json)
-    * Numerator Patient ID: numer-EXM124-FHIR4
-
+```
+NOTE: due to a last minute issue with EXM124 it has not been included
+```
 
 ### Breast Cancer Screening - EXM125
 
-#### FHIR4
+#### FHIR401
 
-* [Measure CQL](fhir4/input/pagecontent/cql/EXM125_FHIR4-7.2.000.cql)
-* [Master Bundle](fhir4/bundles/EXM125_FHIR4-7.2.000/EXM125_FHIR4-7.2.000-bundle.json)  (includes all the Individual bundles)
+* [Measure CQL](fhir401/input/pagecontent/cql/EXM125-7.3.000.cql)
+* [Master Bundle](fhir401/bundles/EXM125-7.3.000/EXM125-7.3.000-bundle.json)  (includes all the Individual bundles)
 
 Individual bundles:
-* [Measure Bundle](fhir4/bundles/EXM125_FHIR4-7.2.000/EXM125_FHIR4-7.2.000-files/measure-EXM125_FHIR4-7.2.000.json)
-* [Terminology Bundle](fhir4/bundles/EXM125_FHIR4-7.2.000/EXM125_FHIR4-7.2.000-files/valuesets-EXM125_FHIR4-7.2.000-bundle.json)
-* [Denominator Test Bundle](fhir4/bundles/EXM125_FHIR4-7.2.000/EXM125_FHIR4-7.2.000-files/tests-denom-EXM125_FHIR4-bundle.json)
-    * Denominator Patient ID: denom-EXM125-FHIR4
-* [Numerator Test Bundle](fhir4/bundles/EXM125_FHIR4-7.2.000/EXM125_FHIR4-7.2.000-files/tests-numer-EXM125_FHIR4-bundle.json)
-    * Numerator Patient ID: numer-EXM125-FHIR4
+* [Measure Bundle](fhir401/bundles/EXM125-7.3.000/EXM125-7.3.000-files/measure-EXM125-7.3.000.json)
+* [Terminology Bundle](fhir401/bundles/EXM125-7.3.000/EXM125-7.3.000-files/valuesets-EXM125-7.3.000-bundle.json)
+* [Denominator Test Bundle](fhir401/bundles/EXM125-7.3.000/EXM125-7.3.000-files/tests-denom-EXM125-bundle.json)
+    * Denominator Patient ID: denom-EXM125
+* [Numerator Test Bundle](fhir401/bundles/EXM125-7.3.000/EXM125-7.3.000-files/tests-numer-EXM125-bundle.json)
+    * Numerator Patient ID: numer-EXM125
     
 
 
 ### Colorectal Cancer Screening - EXM130
 
-#### FHIR4
+#### FHIR401
 
-* [Measure CQL](fhir4/input/pagecontent/cql/EXM130_FHIR4-7.2.000.cql)
-* [Master Bundle](fhir4/bundles/EXM130_FHIR4-7.2.000/EXM130_FHIR4-7.2.000-bundle.json)  (includes all the Individual bundles)
+* [Measure CQL](fhir401/input/pagecontent/cql/EXM130-7.3.000.cql)
+* [Master Bundle](fhir401/bundles/EXM130-7.3.000/EXM130-7.3.000-bundle.json)  (includes all the Individual bundles)
 
 Individual bundles:
-* [Measure Bundle](fhir4/bundles/EXM130_FHIR4-7.2.000/EXM130_FHIR4-7.2.000-files/measure-EXM130_FHIR4-7.2.000.json)
-* [Terminology Bundle](fhir4/bundles/EXM130_FHIR4-7.2.000/EXM130_FHIR4-7.2.000-files/valuesets-EXM130_FHIR4-7.2.000-bundle.json)
-* [Denominator Test Bundle](fhir4/bundles/EXM130_FHIR4-7.2.000/EXM130_FHIR4-7.2.000-files/tests-denom-EXM130_FHIR4-bundle.json)
-    * Denominator Patient ID: denom-EXM130-FHIR4
-* [Numerator Test Bundle](fhir4/bundles/EXM130_FHIR4-7.2.000/EXM130_FHIR4-7.2.000-files/tests-numer-EXM130_FHIR4-bundle.json)
-    * Numerator Patient ID: numer-EXM130-FHIR4
+* [Measure Bundle](fhir401/bundles/EXM130-7.3.000/EXM130-7.3.000-files/measure-EXM130-7.3.000.json)
+* [Terminology Bundle](fhir401/bundles/EXM130-7.3.000/EXM130-7.3.000-files/valuesets-EXM130-7.3.000-bundle.json)
+* [Denominator Test Bundle](fhir401/bundles/EXM130-7.3.000/EXM130-7.3.000-files/tests-denom-EXM130-bundle.json)
+    * Denominator Patient ID: denom-EXM130
+* [Numerator Test Bundle](fhir401/bundles/EXM130-7.3.000/EXM130-7.3.000-files/tests-numer-EXM130-bundle.json)
+    * Numerator Patient ID: numer-EXM130
 
 
 ---
@@ -108,3 +93,17 @@ https://github.com/DBCG/davinci-gic/tree/master/fhir4
 Note: this is a stopgap.  The Organization should be laoded in step 3.
 
 Postman collection is shared above.
+
+## Removed due to issues with running the measure:
+#### FHIR401
+
+* [Measure CQL](fhir401/input/pagecontent/cql/EXM124-8.2.000.cql)
+* [Master Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-bundle.json)  (includes all the Individual bundles)
+
+Individual bundles:
+* [Measure Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-files/measure-EXM124-8.2.000.json)
+* [Terminology Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-files/valuesets-EXM124-8.2.000-bundle.json)
+* [Denominator Test Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-files/tests-denom-EXM124-bundle.json)
+    * Denominator Patient ID: denom-EXM124-FHI4
+* [Numerator Test Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-files/tests-numer-EXM124-bundle.json)
+    * Numerator Patient ID: numer-EXM124-FHIR4
