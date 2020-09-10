@@ -7,6 +7,11 @@
   "extension": [ {
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
     "valueCode": "boolean"
+  }, {
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
+    "valueReference": {
+      "reference": "#cqf-tooling"
+    }
   } ],
   "url": "http://hl7.org/fhir/us/cqfmeasures/Measure/EXM130",
   "identifier": [ {
@@ -57,8 +62,8 @@
   "topic": [ {
     "coding": [ {
       "system": "http://loinc.org",
-      "code": "11111-1",
-      "display": "Test Topic"
+      "code": "57024-2",
+      "display": "Health Quality Measure Document"
     } ]
   } ],
   "relatedArtifact": [ {
