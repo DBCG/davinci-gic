@@ -26,8 +26,8 @@
         "reference": "Patient/numer-EXM130"
       },
       "period": {
-        "start": "2019-05-30T00:00:00.0",
-        "end": "2019-05-31T00:00:00.0"
+        "start": "2020-05-30T00:00:00.0",
+        "end": "2020-05-31T00:00:00.0"
       }
     },
     "request": {
@@ -279,7 +279,7 @@
         "given": [ "Don" ]
       } ],
       "gender": "male",
-      "birthDate": "1965-01-01"
+      "birthDate": "1966-01-01"
     },
     "request": {
       "method": "PUT",
@@ -304,8 +304,8 @@
         "reference": "Patient/numer-EXM130"
       },
       "performedPeriod": {
-        "start": "2010-01-01T00:00:00-06:00",
-        "end": "2010-01-01T01:00:00-07:00"
+        "start": "2011-01-01T00:00:00-06:00",
+        "end": "2011-01-01T01:00:00-07:00"
       }
     },
     "request": {

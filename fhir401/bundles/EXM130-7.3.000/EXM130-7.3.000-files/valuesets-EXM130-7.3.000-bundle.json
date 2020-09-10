@@ -1427,7 +1427,7 @@
       "compose": {
         "include": [ {
           "system": "http://snomed.info/sct",
-          "version": "2019-03",
+          "version": "2020-03",
           "concept": [ {
             "code": "4525004",
             "display": "Emergency department patient visit (procedure)"
@@ -1450,7 +1450,7 @@
       "compose": {
         "include": [ {
           "system": "http://snomed.info/sct",
-          "version": "2019-09",
+          "version": "2020-09",
           "concept": [ {
             "code": "448851000124103",
             "display": "Hospital admission from observation unit (procedure)"
