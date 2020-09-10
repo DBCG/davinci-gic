@@ -86,3 +86,4 @@ fabric.properties
 /fhir401/template/
 /fhir401/input-cache/
 
+/fhir4/input/tests/results

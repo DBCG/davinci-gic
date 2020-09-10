@@ -28,7 +28,7 @@ code "Discharge to healthcare facility for hospice care (procedure)": '428371000
 code "Discharge to home for hospice care (procedure)": '428361000124107' from "SNOMEDCT:2017-09" display 'Discharge to home for hospice care (procedure)'
 
 parameter "Measurement Period" Interval<DateTime>
-  default Interval[@2019-01-01T00:00:00.0, @2020-01-01T00:00:00.0)
+  default Interval[@2020-01-01T00:00:00.0, @2021-01-01T00:00:00.0)
 
 context Patient
 

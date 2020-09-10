@@ -26,7 +26,7 @@ Resources for use at HL7/CMS FHIR Connectathon, Da Vinci Gaps in Care Track.
         clone: https://github.com/DBCG/cqf-ruler.git, switch to davinci_gic branch
         
     
-* Postman scripts
+* Postman scripts:
 
 fhir401\docs\postman-collection\Connectathon 25 Da Vinci GIC.postman_collection.json
 
@@ -36,9 +36,20 @@ fhir401\docs\postman-collection\Connectathon 25 Da Vinci GIC.postman_collection.
 
 ### Cervical Cancer Screening - EXM124
 
-```
-NOTE: due to a last minute issue with EXM124 it has not been included
-```
+#### FHIR401
+
+* [Measure CQL](fhir401/input/pagecontent/cql/EXM124-8.2.000.cql)
+* [Master Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-bundle.json)  (includes all the Individual bundles)
+
+Individual bundles:
+* [Measure Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-files/measure-EXM124-8.2.000.json)
+* [Terminology Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-files/valuesets-EXM124-8.2.000-bundle.json)
+* [Denominator Test Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-files/tests-denom-EXM124-bundle.json)
+    * Denominator Patient ID: denom-EXM124
+* [Numerator Test Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-files/tests-numer-EXM124-bundle.json)
+    * Numerator Patient ID: numer-EXM124
+
+
 
 ### Breast Cancer Screening - EXM125
 
@@ -93,17 +104,3 @@ https://github.com/DBCG/davinci-gic/tree/master/fhir4
 Note: this is a stopgap.  The Organization should be laoded in step 3.
 
 Postman collection is shared above.
-
-## Removed due to issues with running the measure:
-#### FHIR401
-
-* [Measure CQL](fhir401/input/pagecontent/cql/EXM124-8.2.000.cql)
-* [Master Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-bundle.json)  (includes all the Individual bundles)
-
-Individual bundles:
-* [Measure Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-files/measure-EXM124-8.2.000.json)
-* [Terminology Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-files/valuesets-EXM124-8.2.000-bundle.json)
-* [Denominator Test Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-files/tests-denom-EXM124-bundle.json)
-    * Denominator Patient ID: denom-EXM124-FHI4
-* [Numerator Test Bundle](fhir401/bundles/EXM124-8.2.000/EXM124-8.2.000-files/tests-numer-EXM124-bundle.json)
-    * Numerator Patient ID: numer-EXM124-FHIR4
