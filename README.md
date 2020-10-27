@@ -101,6 +101,6 @@ https://github.com/DBCG/davinci-gic/tree/master/fhir4
 
 4. Postman Configuration/Post Bundle, triggered manually from Postman, to load the Organization. 
 
-Note: this is a stopgap.  The Organization should be laoded in step 3.
+Note: this is a stopgap.  The Organization should be loaded in step 3.
 
 Postman collection is shared above.
