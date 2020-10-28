@@ -1,4 +1,4 @@
-# HL7 CMS/FHIR CDa Vinci Gaps in Care
+# HL7 CMS/FHIR Da Vinci Gaps in Care
 
 Resources for use at HL7/CMS FHIR Connectathon, Da Vinci Gaps in Care Track.
 
