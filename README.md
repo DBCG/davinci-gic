@@ -12,6 +12,7 @@ Resources for use at HL7/CMS FHIR Connectathon, Da Vinci Gaps in Care Track.
 1. Hosted Sandbox:
 
         https://gic-sandbox.alphora.com/cqf-ruler-r4/fhir/
+        This testing instance is subject to change throughout the event.
 
 2. Docker Container:
 
@@ -25,14 +26,9 @@ Resources for use at HL7/CMS FHIR Connectathon, Da Vinci Gaps in Care Track.
         https://github.com/DBCG/cqf-ruler/tree/davinci_gic
         clone: https://github.com/DBCG/cqf-ruler.git, switch to davinci_gic branch
         
-    
-* Postman scripts:
-
-fhir401\docs\postman-collection\Connectathon 26 Da Vinci GIC.postman_collection.json
-
-
-
+   
 ## Gaps In Care Scenarios
+These testing materials are subject to change throughout the event.
 
 ### Cervical Cancer Screening - EXM124
 
@@ -84,7 +80,13 @@ Individual bundles:
     * Numerator Patient ID: numer-EXM130
 
 
-## Sessions:
+## Sessions
+
+### Postman scripts:
+
+fhir401\docs\postman-collection\Connectathon 26 Da Vinci GIC.postman_collection.json.
+These testing materials are subject to change throughout the event.
+
 ### Gaps In Care Demo
 
  1. Open the "GIC Demo" folder in the Postman collection
