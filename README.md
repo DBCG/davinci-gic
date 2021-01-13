@@ -28,7 +28,7 @@ Resources for use at HL7/CMS FHIR Connectathon, Da Vinci Gaps in Care Track.
     
 * Postman scripts:
 
-fhir401\docs\postman-collection\Connectathon 25 Da Vinci GIC.postman_collection.json
+fhir401\docs\postman-collection\Connectathon 26 Da Vinci GIC.postman_collection.json
 
 
 
@@ -83,6 +83,29 @@ Individual bundles:
 * [Numerator Test Bundle](fhir401/bundles/EXM130-7.3.000/EXM130-7.3.000-files/tests-numer-EXM130-bundle.json)
     * Numerator Patient ID: numer-EXM130
 
+
+## Sessions:
+### Gaps In Care Testing
+
+1.   Open the "GIC Testing" folder in the Postman collection
+2.   Config/Reset
+   *   If this is the first time running testing, configure the content and data
+         *   Open the Config folder
+         *   Run "Post EXM130 Bundle"
+         *   Expected result: a 201 created response
+   *   If this is not the first time, reset the data
+         *   Open the Reset folder
+         *   Run "Reset GIC Procedure"
+         *   Expected result: a 200 OK response
+3.   Run "check-gap"
+   *   Expected result: a Parameters Resource that contains a $care-gaps response, including a Measure report with a Numerator = 0, and Denominator = 1
+   *   This indicates that the patient is in the measure population, but does not meet the criteria of the measure.
+4.   Run "post gap data"
+   *   Expected result: a 201 created response
+   *   This indicates that an additional Procedure resource was added.  The additional data meets the criteria of the measure (open gap).
+5.   Run "re-check gap"
+   *   Expected result: a Parameters Resource that contains a $care-gaps response, including a Measure report with a Numerator = 1, and Denominator = 1
+   *   This indicates that the patient is in the measure population and meets the criteria of the measure (closed gap).
 
 ---
 ## Technical Info
