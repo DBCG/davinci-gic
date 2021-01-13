@@ -16,4 +16,4 @@ to   `SET fsoption=-fs http://localhost:8080/cqf-ruler-r4/fhir/`
 
 3.  run _refresh
 
-4. results are posted to the configured FHIR serer and to the bundles folder
+4. results are posted to the configured FHIR server and to the bundles folder
