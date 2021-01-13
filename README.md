@@ -109,10 +109,27 @@ These testing materials are subject to change throughout the event.
    * Expected result: a Parameters Resource that contains a $care-gaps response, including a Measure report with a Numerator = 1, and Denominator = 1
    * This indicates that the patient is in the measure population and meets the criteria of the measure (closed gap).
    
- ### Gaps In Care Testing
+### Gaps In Care Testing
 
  1. Open the "GIC Testing" folder in the Postman collection
-
+ 2. Config
+   * Run "Post EXM124 Bundle"
+      * Expected result: a 200 OK response
+      * This indicates that the content has been posted to the server.
+   * Run "Post EXM125 Bundle"
+      * Expected result: a 200 OK response
+      * This indicates that the content has been posted to the server.
+   * Run "Post EXM130 Bundle"
+      * Expected result: a 200 OK response
+      * This indicates that the content has been posted to the server.
+   * Run "Post Group Bundle"
+      * Expected result: a 200 OK response
+      * This indicates that the content has been posted to the server.
+   * Run "Post Reporter Bundle"
+      * Expected result: a 200 OK response
+      * This indicates that the content has been posted to the server.
+ 3. Parameters
+   * Each request is targetted at a parameter option for the $care-gaps operation.  Run the parameter you want to test.
 
 ### Gaps In Care Member Attribution
 
