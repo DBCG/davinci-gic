@@ -1,0 +1,18 @@
+@startuml DEQM_GIC_Scenario
+title DEQM GIC Scenario
+participant "Client" as Producer
+participant "Server" as Consumer
+
+Producer -> Producer: Patient data related to Quality Measure
+Producer -> Consumer: $submit-data
+Consumer -> Producer: OperationOutcome
+
+Consumer -> Consumer: $care-gaps Bundle (care gap document)
+note right: Result: Open gap
+Producer -> Producer: Patient data that closes the gap
+Producer -> Consumer: $submit-data
+Consumer -> Producer: OperationOutcome
+
+Consumer -> Consumer: $care-gaps Bundle (care gap document)
+note right: Result: Closed Gap
+@enduml

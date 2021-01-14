@@ -1,0 +1,21 @@
+@startuml GIC_Close_Open_Gap
+title GIC Close Open Gap
+
+participant "Client" as Client
+participant "Server" as Server
+
+Server -> Server: Patient data related to Quality Measure
+note right: Postman "Config" request
+
+Client -> Server: Request $care-gaps Operation
+Server -> Client: $care-gaps Bundle (care gap document)
+note right: Postman "Open Gap" request
+
+Server -> Server: Patient data that closes the gap
+note right: Postman "Close Gap" request
+
+Client -> Server: Request $care-gaps Operation
+Server -> Client: $care-gaps Bundle (care gap document)
+note right: Postman "Closed Gap" request
+
+@enduml

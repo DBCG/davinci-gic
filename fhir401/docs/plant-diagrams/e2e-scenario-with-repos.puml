@@ -1,0 +1,26 @@
+@startuml DEQM_GIC_Scenario
+title DEQM GIC Scenario
+participant "Producer" as Producer
+participant "Consumer" as Consumer
+participant "Knowledge Repository" as KR
+participant "Terminology Service" as TS
+
+Producer -> Producer: Patient data related to Quality Measure
+Producer -> Consumer: $submit-data
+Consumer -> Producer: OperationOutcome
+Consumer -> KR: GET Knowledge Artifacts(s)
+KR -> Consumer: Knowledge Artifacts(s)
+Consumer -> TS: GET ValueSet(s)
+TS -> Consumer: ValueSet(s)
+Consumer -> Consumer: $care-gaps Bundle (care gap document)
+note right: Results: Open gap
+Producer -> Producer: Patient data that closes the gap
+Producer -> Consumer: $submit-data
+Consumer -> Producer: OperationOutcome
+Consumer -> KR: GET Knowledge Artifacts(s)
+KR -> Consumer: Knowledge Artifacts(s)
+Consumer -> TS: GET ValueSet(s)
+TS -> Consumer: ValueSet(s)
+Consumer -> Consumer: $care-gaps Bundle (care gap document)
+note right: Result: Closed Gap
+@enduml

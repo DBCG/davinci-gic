@@ -1,0 +1,10 @@
+@startuml GIC_Scenario
+title GIC Scenario
+
+participant "Client" as Client
+participant "Server" as Server
+
+Client -> Server: Request $care-gaps Operation
+Server -> Client: $care-gaps Bundle (care gap document)
+
+@enduml
