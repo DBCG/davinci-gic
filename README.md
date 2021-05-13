@@ -18,13 +18,13 @@ Resources for use at HL7/CMS FHIR Connectathon, Da Vinci Gaps in Care Track.
 
         R4
         ```
-        docker pull contentgroup/cqf-ruler:gic
-        docker run -p 8080:8080 contentgroup/cqf-ruler:gic
+        docker pull contentgroup/cqf-ruler
+        docker run -p 8080:8080 contentgroup/cqf-ruler
         ```
 3. Code repository:
         
-        https://github.com/DBCG/cqf-ruler/tree/davinci_gic
-        clone: https://github.com/DBCG/cqf-ruler.git, switch to davinci_gic branch
+        https://github.com/DBCG/cqf-ruler/tree/master
+        clone: https://github.com/DBCG/cqf-ruler.git, master branch
         
    
 ## Gaps In Care Scenarios
