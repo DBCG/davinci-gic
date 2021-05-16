@@ -173,7 +173,7 @@ These testing materials are subject to change throughout the event.
 * Sandbox build: 
 1.  Travis build, triggered from GitHub commit:
 
-    https://travis-ci.com/github/DBCG/cqf-ruler/builds - master
+    https://travis-ci.com/github/DBCG/cqf-ruler/builds - gic-connectathon27
 
 2.  Jenkins build, triggered manually:
 
