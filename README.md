@@ -138,17 +138,12 @@ These testing materials are subject to change throughout the event.
 ### Gaps In Care Testing
 
 1. Open the "GIC Testing" folder in the Postman collection
-2. Config (one time setup)
-    * Run each request in the folder
-        * Expected result: a 200 OK response
-        * This indicates that the content has been posted to the server. 
-3. Test 
-    * Copy the Template request and name it the Scenario name from Connectathon Manager.
+2. Duplicate the Template request and re-name it the Scenario name from Connectathon Manager
 4. Parameters
     * On the Params tab of Postman
-    * Check the Params applicable to your test and enter the desired Value(s).
+    * Check the Params applicable to your test and enter the desired Value(s)
 5. Send request from Postman and check result for expected result
-5. Connection Manager - Track Details and testing - edit Da Vinci DEQM Gaps in Care
+6. Connectathon Manager - Track Details and testing - edit Da Vinci DEQM Gaps in Care
     * Description tab, edit the Scenario, Links tab
         * Click + to add link
         * Copy the GET address from Postman into Link, prefix with: http://gic-sandbox.alphora.com/cqf-ruler-r4/fhir/
@@ -157,6 +152,7 @@ These testing materials are subject to change throughout the event.
     * Testing and feedback tab
         * Select the Scenario - add new result
         * Select Da Vinci Gaps in Care RI for the Server
+7. When you're completely done, export your Postman collection and email file to rob@alphora.com
 
 ### Gaps In Care Member Attribution
 
