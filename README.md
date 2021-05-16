@@ -11,20 +11,20 @@ Resources for use at HL7/CMS FHIR Connectathon, Da Vinci Gaps in Care Track.
 
 1. Hosted Sandbox:
 
-        https://gic-sandbox.alphora.com/cqf-ruler-r4/fhir/
+        http://gic-sandbox.alphora.com/cqf-ruler-r4/fhir/
         This testing instance is subject to change throughout the event.
 
 2. Docker Container:
 
         R4
         ```
-        docker pull contentgroup/cqf-ruler:gic
-        docker run -p 8080:8080 contentgroup/cqf-ruler:gic
+        docker pull contentgroup/cqf-ruler
+        docker run -p 8080:8080 contentgroup/cqf-ruler
         ```
 3. Code repository:
         
-        https://github.com/DBCG/cqf-ruler/tree/davinci_gic
-        clone: https://github.com/DBCG/cqf-ruler.git, switch to davinci_gic branch
+        https://github.com/DBCG/cqf-ruler/tree/master
+        clone: https://github.com/DBCG/cqf-ruler.git, master branch
         
    
 ## Gaps In Care Scenarios
@@ -138,12 +138,25 @@ These testing materials are subject to change throughout the event.
 ### Gaps In Care Testing
 
 1. Open the "GIC Testing" folder in the Postman collection
-2. Config
+2. Config (one time setup)
     * Run each request in the folder
         * Expected result: a 200 OK response
         * This indicates that the content has been posted to the server. 
-3. Parameters
-    * Each request is targetted at a parameter option for the $care-gaps operation.  Run the parameter you want to test.
+3. Test 
+    * Copy the Template request and name it the Scenario name from Connectathon Manager.
+4. Parameters
+    * On the Params tab of Postman
+    * Check the Params applicable to your test and enter the desired Value(s).
+5. Send request from Postman and check result for expected result
+5. Connection Manager - Track Details and testing - edit Da Vinci DEQM Gaps in Care
+    * Description tab, edit the Scenario, Links tab
+        * Click + to add link
+        * Copy the GET address from Postman into Link, prefix with: http://gic-sandbox.alphora.com/cqf-ruler-r4/fhir/
+        * Name "Reference Implementation"
+    * Add and Update 
+    * Testing and feedback tab
+        * Select the Scenario - add new result
+        * Select Da Vinci Gaps in Care RI for the Server
 
 ### Gaps In Care Member Attribution
 
@@ -164,7 +177,7 @@ These testing materials are subject to change throughout the event.
 * Sandbox build: 
 1.  Travis build, triggered from GitHub commit:
 
-    https://travis-ci.com/github/DBCG/cqf-ruler/builds - davinci_gic
+    https://travis-ci.com/github/DBCG/cqf-ruler/builds - master
 
 2.  Jenkins build, triggered manually:
 
