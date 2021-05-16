@@ -18,8 +18,8 @@ Resources for use at HL7/CMS FHIR Connectathon, Da Vinci Gaps in Care Track.
 
         R4
         ```
-        docker pull contentgroup/cqf-ruler
-        docker run -p 8080:8080 contentgroup/cqf-ruler
+        docker pull contentgroup/cqf-ruler:gic
+        docker run -p 8080:8080 contentgroup/cqf-ruler:gic
         ```
 3. Code repository:
         
