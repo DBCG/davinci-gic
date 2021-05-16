@@ -138,7 +138,7 @@ These testing materials are subject to change throughout the event.
 ### Gaps In Care Testing
 
 1. Open the "GIC Testing" folder in the Postman collection
-2. Config
+2. Config (one time setup)
     * Run each request in the folder
         * Expected result: a 200 OK response
         * This indicates that the content has been posted to the server. 
