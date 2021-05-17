@@ -141,7 +141,7 @@ These testing materials are subject to change throughout the event.
 2. Select Scenario - Connectathon Manager - Track Details and testing - edit Da Vinci DEQM Gaps in Care
     *  Description tab, add or edit Scenario
     *  Fields:
-        *  Name - use <thing tested> <in/out>  <optional context> pattern
+        *  Name - use < thing tested > < in/out >  < optional context > pattern
             * example: periodStart and periodEnd out prior  
         *  Description: example - periodStart and periodEnd are prior to the MeasurementPeriod.
         *  Pre/Post - Success Criteria: example - Not in InitialPopulation
