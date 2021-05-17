@@ -161,7 +161,8 @@ Note: preconfigured data includes "denom-" and "numer-" Patient data.  "denom-" 
     * Testing and feedback tab
         * Select the Scenario - add new result
         * Select Da Vinci Gaps in Care RI for the Server
-9. When you're completely done, export your Postman collection and email file to rob@alphora.com
+9. Save your Postman Request
+10. When you're completely done, export your Postman collection and email file to rob@alphora.com
 
 ### Gaps In Care Member Attribution
 
