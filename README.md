@@ -136,6 +136,7 @@ These testing materials are subject to change throughout the event.
     * This indicates that the patient is in the measure population and meets the criteria of the measure (closed gap).
    
 ### Gaps In Care Testing
+Note: preconfigured data includes "denom-" and "numer-" Patient data.  "denom-" does not meet Measure requirements; "numer-" does.
 
 1. Open the "GIC Testing" folder in the Postman collection
 2. Select Scenario - Connectathon Manager - Track Details and testing - edit Da Vinci DEQM Gaps in Care
