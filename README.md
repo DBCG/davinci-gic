@@ -18,8 +18,8 @@ Resources for use at HL7/CMS FHIR Connectathon, Da Vinci Gaps in Care Track.
 
         R4
         ```
-        docker pull contentgroup/cqf-ruler
-        docker run -p 8080:8080 contentgroup/cqf-ruler
+        docker pull contentgroup/cqf-ruler:gic
+        docker run -p 8080:8080 contentgroup/cqf-ruler:gic
         ```
 3. Code repository:
         
@@ -136,27 +136,33 @@ These testing materials are subject to change throughout the event.
     * This indicates that the patient is in the measure population and meets the criteria of the measure (closed gap).
    
 ### Gaps In Care Testing
+Note: preconfigured data includes "denom-" and "numer-" Patient data.  "denom-" does not meet Measure requirements; "numer-" does.
 
 1. Open the "GIC Testing" folder in the Postman collection
-2. Config (one time setup)
-    * Run each request in the folder
-        * Expected result: a 200 OK response
-        * This indicates that the content has been posted to the server. 
-3. Test 
-    * Copy the Template request and name it the Scenario name from Connectathon Manager.
-4. Parameters
+2. Select Scenario - Connectathon Manager - Track Details and testing - edit Da Vinci DEQM Gaps in Care
+    *  Description tab, add or edit Scenario
+    *  Fields:
+        *  Name: use < thing tested > < in/out >  < optional context > pattern
+            * example: periodStart and periodEnd out prior  
+        *  Description: example: periodStart and periodEnd are prior to the MeasurementPeriod.
+        *  Pre/Post - Success Criteria: example: Not in InitialPopulation
+4. Duplicate the Template request and re-name it the Scenario name from Connectathon Manager
+5. Set Parameters
     * On the Params tab of Postman
-    * Check the Params applicable to your test and enter the desired Value(s).
-5. Send request from Postman and check result for expected result
-5. Connection Manager - Track Details and testing - edit Da Vinci DEQM Gaps in Care
+    * Check the Params applicable to your test and enter the desired Value(s)
+6. Send request from Postman and check result for expected result
+7. Add link to Scenario - Connectathon Manager
     * Description tab, edit the Scenario, Links tab
         * Click + to add link
         * Copy the GET address from Postman into Link, prefix with: http://gic-sandbox.alphora.com/cqf-ruler-r4/fhir/
         * Name "Reference Implementation"
-    * Add and Update 
+        * Add and Update 
+8. Record Result - Connectathon Manager
     * Testing and feedback tab
         * Select the Scenario - add new result
         * Select Da Vinci Gaps in Care RI for the Server
+9. Save your Postman Request
+10. When you're completely done, export your Postman collection and email file to rob@alphora.com
 
 ### Gaps In Care Member Attribution
 
@@ -177,7 +183,7 @@ These testing materials are subject to change throughout the event.
 * Sandbox build: 
 1.  Travis build, triggered from GitHub commit:
 
-    https://travis-ci.com/github/DBCG/cqf-ruler/builds - master
+    https://travis-ci.com/github/DBCG/cqf-ruler/builds - gic-connectathon27
 
 2.  Jenkins build, triggered manually:
 
