@@ -138,7 +138,7 @@ These testing materials are subject to change throughout the event.
 ### Gaps In Care Testing
 
 1. Open the "GIC Testing" folder in the Postman collection
-2. Scenario - Connectathon Manager - Track Details and testing - edit Da Vinci DEQM Gaps in Care
+2. Select Scenario - Connectathon Manager - Track Details and testing - edit Da Vinci DEQM Gaps in Care
     *  Description tab, add or edit Scenario
     *  Fields:
         *  Name - use <thing tested> <in/out>  <optional context> pattern
