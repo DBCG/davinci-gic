@@ -151,18 +151,12 @@ Note: preconfigured data includes "denom-" and "numer-" Patient data.  "denom-" 
     * On the Params tab of Postman
     * Check the Params applicable to your test and enter the desired Value(s)
 6. Send request from Postman and check result for expected result
-7. Add link to Scenario - Connectathon Manager
-    * Description tab, edit the Scenario, Links tab
-        * Click + to add link
-        * Copy the GET address from Postman into Link, prefix with: http://gic-sandbox.alphora.com/cqf-ruler-r4/fhir/
-        * Name "Reference Implementation"
-        * Add and Update 
-8. Record Result - Connectathon Manager
+7. Record Result - Connectathon Manager
     * Testing and feedback tab
         * Select the Scenario - add new result
         * Select Da Vinci Gaps in Care RI for the Server
-9. Save your Postman Request
-10. When you're completely done, export your Postman collection and email file to rob@alphora.com
+8. Save your Postman Request
+9. When you're completely done, export your Postman collection and email file to rob@alphora.com
 
 ### Gaps In Care Member Attribution
 
