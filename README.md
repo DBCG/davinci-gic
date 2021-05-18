@@ -137,6 +137,7 @@ These testing materials are subject to change throughout the event.
    
 ### Gaps In Care Testing
 Note: preconfigured data includes "denom-" and "numer-" Patient data.  "denom-" does not meet Measure requirements; "numer-" does.
+NOTE: Config only needs to be run once per endpoint.  Config has already been run for the gic-sandbox instance.
 
 1. Open the "GIC Testing" folder in the Postman collection
 2. Select Scenario - Connectathon Manager - Track Details and testing - edit Da Vinci DEQM Gaps in Care
@@ -147,16 +148,17 @@ Note: preconfigured data includes "denom-" and "numer-" Patient data.  "denom-" 
         *  Description: example: periodStart and periodEnd are prior to the MeasurementPeriod.
         *  Pre/Post - Success Criteria: example: Not in InitialPopulation
 4. Duplicate the Template request and re-name it the Scenario name from Connectathon Manager
-5. Set Parameters
+    * Move to appropriate folder
+6. Set Parameters
     * On the Params tab of Postman
     * Check the Params applicable to your test and enter the desired Value(s)
-6. Send request from Postman and check result for expected result
-7. Record Result - Connectathon Manager
+7. Send request from Postman and check result for expected result
+8. Record Result - Connectathon Manager
     * Testing and feedback tab
         * Select the Scenario - add new result
         * Select Da Vinci Gaps in Care RI for the Server
-8. Save your Postman Request
-9. When you're completely done, export your Postman collection and email file to rob@alphora.com
+9. Save your Postman Request
+10. When you're completely done, export your Postman collection and email file to rob@alphora.com
 
 ### Gaps In Care Member Attribution
 
