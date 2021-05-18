@@ -84,7 +84,7 @@ Individual bundles:
 
 ### Postman scripts:
 
-A Postman collection containing all the content required for the Sessions can be downloaded from: https://github.com/DBCG/davinci-gic/blob/master/fhir401/docs/postman-collection/HL7%20Da%20Vinci%20GIC%20Connectathon%2026.postman_collection.json
+A Postman collection containing all the content required for the Sessions can be downloaded from: https://github.com/DBCG/davinci-gic/blob/master/fhir401/docs/postman-collection/Connectathon%2027%20DEQM-GIC.postman_collection.json
 
 These testing materials are subject to change throughout the event.
 
